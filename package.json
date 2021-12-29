@@ -1,20 +1,24 @@
 {
-  "name": "algorithm-visuliser",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EzyhB/algorithm-visuliser.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EzyhB/algorithm-visuliser/issues"
-  },
-  "homepage": "https://github.com/EzyhB/algorithm-visuliser#readme"
+    "name": "algorithm-visuliser",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EzyhB/algorithm-visuliser.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/EzyhB/algorithm-visuliser/issues"
+    },
+    "homepage": "https://github.com/EzyhB/algorithm-visuliser#readme",
+    "devDependencies": {
+        "jest": "^27.4.5"
+    }
 }
