@@ -1,41 +1,31 @@
 import { binarySearch } from "./binarySearch.js";
 
 describe("Does the binary search return the 'target' value", () => {
-    it("should return empty array [] when input array is empty", () => {
-        let inputArray = [];
-        let inputTarget = 0;
-        let actual = binarySearch(inputArray, inputTarget);
-        let expected = [];
+    it("should return 252 when target = 252", () => {
+        let inputArray = [
+            32, 40, 66, 90, 111, 135, 153, 162, 168, 173, 201, 230, 237, 242, 252,
+        ];
+        let inputTarget = 252;
 
-        expect(actual).toBe(expected);
+        expect(binarySearch(inputArray, inputTarget)).toBe(252);
     });
 
-    it("should return 302 when target = 302", () => {
+    it("should return 32 when target = 32", () => {
         let inputArray = [
-            240, 156, 226, 487, 379, 57, 164, 487, 48, 97, 381, 105, 15, 302,
+            32, 40, 66, 90, 111, 135, 153, 162, 168, 173, 201, 230, 237, 242, 252,
         ];
-        let inputTarget = 302;
+        let inputTarget = 32;
 
-        expect(binarySearch(inputArray, inputTarget)).toBe(302);
+        expect(binarySearch(inputArray, inputTarget)).toBe(32);
     });
 
-    it("should return 240 when target = 240", () => {
+    it("should return 237 when target = 237", () => {
         let inputArray = [
-            240, 156, 226, 487, 379, 57, 164, 487, 48, 97, 381, 105, 15, 302,
+            32, 40, 66, 90, 111, 135, 153, 162, 168, 173, 201, 230, 237, 242, 252,
         ];
-        let inputTarget = 240;
+        let inputTarget = 237;
 
-        expect(binarySearch(inputArray, inputTarget)).toBe(240);
-    });
-
-    it("should return 43 when target = 43", () => {
-        let inputArray = [
-            144, 278, 481, 327, 131, 409, 108, 271, 369, 318, 102, 279, 168, 216, 43,
-            165, 126,
-        ];
-        let inputTarget = 43;
-
-        expect(binarySearch(inputArray, inputTarget)).toBe(43);
+        expect(binarySearch(inputArray, inputTarget)).toBe(237);
     });
 
     it("should return 0 when target = 0", () => {

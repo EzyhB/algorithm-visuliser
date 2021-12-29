@@ -28,7 +28,6 @@ const randomIntButton = document.querySelector("#search-random-int");
 const searchNumber = document.querySelector("#search-int");
 
 var searchRandomInt = function() {
-    console.log("ssaah");
     let arrIndex = getRandomArbitrary(0, arr.length - 1);
     searchNumber.innerHTML = `searching for number: ${arr[arrIndex]}`;
     //call function to search for the number
