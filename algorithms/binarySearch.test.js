@@ -34,4 +34,13 @@ describe("Does the binary search return the 'target' value", () => {
 
         expect(binarySearch(inputArray, inputTarget)).toBe(0);
     });
+
+    it("should return 'Value not found!' when target does not exist in the array", () => {
+        let inputArray = [
+            32, 40, 66, 90, 111, 135, 153, 162, 168, 173, 201, 230, 237, 242, 252,
+        ];
+        let inputTarget = 0;
+
+        expect(binarySearch(inputArray, inputTarget)).toBe("value not found!");
+    });
 });

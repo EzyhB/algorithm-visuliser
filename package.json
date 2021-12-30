@@ -5,7 +5,8 @@
     "main": "app.js",
     "type": "module",
     "scripts": {
-        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "start": "nodemon ./src/app.js"
     },
     "repository": {
         "type": "git",
@@ -19,6 +20,10 @@
     },
     "homepage": "https://github.com/EzyhB/algorithm-visuliser#readme",
     "devDependencies": {
-        "jest": "^27.4.5"
+        "jest": "^27.4.5",
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "express": "^4.17.2"
     }
 }

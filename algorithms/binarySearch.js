@@ -18,4 +18,5 @@ export var binarySearch = function(array, target) {
             return array[mid];
         }
     }
+    return "value not found!";
 };
