@@ -6,7 +6,7 @@
 .container {
     height: 100vh;
     width: 100%;
-    background-image: url("https://cdn.wallpapersafari.com/20/38/sJ6zli.jpg");
+    background-image: url("../media/white-background.png");
     background-position: center;
     background-size: cover;
     padding-left: 5%;
@@ -42,7 +42,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #0aff37;
+    color: #63a4b3;
+    font-size: 19px;
 }
 
 .content h1 {
@@ -50,7 +51,11 @@ nav ul li a {
     font-weight: 100;
     margin-top: 24px;
     margin-bottom: 15px;
-    color: #1eda1b;
+    color: #63a4b3;
+}
+
+.content p {
+    color: #63a4b3;
 }
 
 .content {
@@ -60,11 +65,10 @@ nav ul li a {
 
 .content .btn {
     display: inline-block;
-    background: linear-gradient(45deg, #564e58, #1eda1b);
+    background: linear-gradient(200deg, #a6dde9, #2c7485);
     border-radius: 6px;
     padding: 10px 20px;
     box-sizing: border-box;
     text-decoration: none;
-    color: black;
-    box-shadow: #4a080a -8px -3px 22px;
+    color: #ffffff;
 }

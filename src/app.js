@@ -1,14 +1,20 @@
 import express from "express";
+import path from "path";
 
 import { pureTest } from "../middle-wear/firstMid.js";
 
 const app = express();
 const port = 5000;
+const __dirname = path.resolve();
 
-// app.use(express.static("public/home-page"));
+app.use(express.static(__dirname + "/public"));
 
-app.get("/", express.static("public/home-page"), pureTest, (req, res) => {
-    res.send("<h1>hello world</h1>");
+app.get("/homepage", (req, res) => {
+    res.sendFile(path.join(__dirname, "/public/home-page/index.html"));
+});
+
+app.get("/search/algorithms", (req, res) => {
+    res.sendFile(path.join(__dirname, "/public/search-algo/index.html"));
 });
 
 app.listen(port, (err) => {
