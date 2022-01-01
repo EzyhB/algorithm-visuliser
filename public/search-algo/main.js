@@ -13,14 +13,16 @@ let arr = [];
 var generateBinary = function() {
     graphHeader.innerHTML = "";
     arr = [];
-    let num = 31;
+    let num = 32;
     let data = 5;
     graphItems.innerHTML = "";
     while (num > 0) {
         let randomNum = getRandomArbitrary(5, 30);
-        let i = arr.push((data += randomNum));
+        data += randomNum;
+        let i = arr.push(data);
         var item = document.createElement(`li`);
-        item.innerHTML = `${(data += randomNum)}`;
+        item.id = data;
+        item.innerHTML = `${data}`;
         graphItems.appendChild(item);
         num--;
     }

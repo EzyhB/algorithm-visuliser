@@ -48,7 +48,7 @@ nav ul li a {
 
 graph {
     position: absolute;
-    margin-left: 29%;
+    margin-left: 31%;
     margin-top: 10%;
     margin-right: 30%;
 }
@@ -59,12 +59,6 @@ graph h1 {
     margin-top: 24px;
     margin-bottom: 15px;
     color: #63a4b3;
-}
-
-.graph-items {
-    /* margin-top: 10%;
-    margin-left: 29%;
-    margin-right: 27%; */
 }
 
 graph ul li {
@@ -80,6 +74,29 @@ graph ul li {
 
 .graph-buttons {
     margin-top: 40%;
-    margin-left: 50%;
+    margin-left: 43%;
     position: relative;
+}
+
+#new-graph {
+    display: inline-block;
+    background: #84458a;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20;
+}
+
+#search-random-int {
+    display: inline-block;
+    background: #e49ceb;
+    margin: 2px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20;
 }
