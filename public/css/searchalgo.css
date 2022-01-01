@@ -46,7 +46,14 @@ nav ul li a {
     font-size: 19px;
 }
 
-.content h1 {
+graph {
+    position: absolute;
+    margin-left: 29%;
+    margin-top: 10%;
+    margin-right: 30%;
+}
+
+graph h1 {
     font-size: 60px;
     font-weight: 100;
     margin-top: 24px;
@@ -54,21 +61,25 @@ nav ul li a {
     color: #63a4b3;
 }
 
-.content p {
-    color: #63a4b3;
+.graph-items {
+    /* margin-top: 10%;
+    margin-left: 29%;
+    margin-right: 27%; */
 }
 
-.content {
-    margin-left: 6%;
-    margin-top: 7%;
-}
-
-.content .btn {
+graph ul li {
     display: inline-block;
-    background: linear-gradient(200deg, #a6dde9, #2c7485);
+    list-style: none;
+    margin: 2px;
     border-radius: 6px;
     padding: 10px 20px;
     box-sizing: border-box;
-    text-decoration: none;
-    color: #ffffff;
+    background: linear-gradient(200deg, #a6dde9, #2c7485);
+    font-size: 25px;
+}
+
+.graph-buttons {
+    margin-top: 40%;
+    margin-left: 50%;
+    position: relative;
 }

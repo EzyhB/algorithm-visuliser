@@ -4,20 +4,27 @@ function getRandomArbitrary(min, max) {
 
 // binary search
 const newGraphButton = document.querySelector("#new-graph");
-const graphData = document.querySelector("#graph");
+const graphData = document.querySelector(".graph");
+const graphItems = document.querySelector(".graph-Items");
+const graphHeader = document.querySelector("#graph-title");
 
 let arr = [];
 //generate graph data
 var generateBinary = function() {
+    graphHeader.innerHTML = "";
     arr = [];
-    let num = 30;
+    let num = 31;
     let data = 5;
+    graphItems.innerHTML = "";
     while (num > 0) {
         let randomNum = getRandomArbitrary(5, 30);
         let i = arr.push((data += randomNum));
+        var item = document.createElement(`li`);
+        item.innerHTML = `${(data += randomNum)}`;
+        graphItems.appendChild(item);
         num--;
     }
-    graphData.innerHTML = arr;
+
     // call another function to make visual graph
 };
 
