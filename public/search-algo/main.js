@@ -1,3 +1,6 @@
+import { binarySearch } from "../algorithms/binarySearch.js";
+import { LinearSearch } from "../algorithms/linearSearch.js";
+
 function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
@@ -16,15 +19,17 @@ var generateBinary = function() {
     let num = 32;
     let data = 5;
     graphItems.innerHTML = "";
+    let id = 0;
     while (num > 0) {
         let randomNum = getRandomArbitrary(5, 30);
         data += randomNum;
         let i = arr.push(data);
         var item = document.createElement(`li`);
-        item.id = data;
+        item.id = `a${id}`;
         item.innerHTML = `${data}`;
         graphItems.appendChild(item);
         num--;
+        id++;
     }
 
     // call another function to make visual graph
@@ -36,10 +41,22 @@ newGraphButton.addEventListener("click", generateBinary);
 const randomIntButton = document.querySelector("#search-random-int");
 const searchNumber = document.querySelector("#search-int");
 
-var searchRandomInt = function() {
+var searchRandomIntBinary = function() {
     let arrIndex = getRandomArbitrary(0, arr.length - 1);
     searchNumber.innerHTML = `searching for number: ${arr[arrIndex]}`;
     //call function to search for the number
+    binarySearch(arr, arr[arrIndex]);
 };
 
-randomIntButton.addEventListener("click", searchRandomInt);
+randomIntButton.addEventListener("click", searchRandomIntBinary);
+
+// get liniar search number
+
+const linearButton = document.querySelector("#search-linear-int");
+var searchRandomIntLiniar = function() {
+    let arrIndex = getRandomArbitrary(0, arr.length - 1);
+    searchNumber.innerHTML = `searching for number: ${arr[arrIndex]}`;
+    //call function to search for the number
+    LinearSearch(arr, arr[arrIndex]);
+};
+linearButton.addEventListener("click", searchRandomIntLiniar);

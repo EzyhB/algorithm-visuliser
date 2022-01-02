@@ -68,7 +68,7 @@ graph ul li {
     border-radius: 6px;
     padding: 10px 20px;
     box-sizing: border-box;
-    background: linear-gradient(200deg, #a6dde9, #2c7485);
+    background: #a6dde9;
     font-size: 25px;
 }
 
@@ -99,4 +99,32 @@ graph ul li {
     text-decoration: none;
     color: #ffffff;
     font-size: 20;
+}
+
+#search-linear-int {
+    display: inline-block;
+    background: #e49ceb;
+    margin: 2px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20;
+}
+
+.right {
+    background: #9e5df3;
+}
+
+.left {
+    background: #41cdec;
+}
+
+.middle {
+    background: gold;
+}
+
+.found {
+    background: rgb(0, 248, 12);
 }
