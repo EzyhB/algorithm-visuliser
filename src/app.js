@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 
-import { pureTest } from "../middle-wear/firstMid.js";
+
 
 const app = express();
 const port = 5000;
