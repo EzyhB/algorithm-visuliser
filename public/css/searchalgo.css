@@ -128,3 +128,55 @@ graph ul li {
 .found {
     background: rgb(0, 248, 12);
 }
+
+info {
+    opacity: 1;
+}
+
+.algorithm-db {
+    height: 500px;
+    width: 20%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 3%;
+    border-radius: 10px;
+    background: blueviolet;
+}
+
+#algorithm-name {
+    position: relative;
+    font-size: 25px;
+    font-weight: 100;
+    color: #63a4b3;
+}
+
+#algorithm-info {
+    position: relative;
+    font-size: 20px;
+    font-weight: 100;
+    color: #63a4b3;
+}
+
+#search-algorithm {
+    position: absolute;
+    display: inline-block;
+    background: #e49ceb;
+    margin: 2px;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20;
+}
+
+#input-algorithm {
+    position: absolute;
+    color: #171717;
+    font: 1em Hind, sans-serif;
+    padding: 10px;
+    bottom: 2;
+    left: 2;
+}

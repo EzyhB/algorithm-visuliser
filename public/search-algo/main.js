@@ -1,5 +1,8 @@
 import { binarySearch } from "../algorithms/binarySearch.js";
 import { LinearSearch } from "../algorithms/linearSearch.js";
+// import { getAlgoInfoFromDB } from "../modles/algoInfo.js";
+
+// im
 
 function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
@@ -60,3 +63,25 @@ var searchRandomIntLiniar = function() {
     LinearSearch(arr, arr[arrIndex]);
 };
 linearButton.addEventListener("click", searchRandomIntLiniar);
+
+//the DB stuff
+
+const dbSearchBar = document.querySelector("#input-algorithm");
+const dbSearchButton = document.querySelector("#search-algorithm");
+
+const dbH1Name = document.querySelector("#algorithm-name");
+const dbH3Info = document.querySelector("#algorithm-info");
+
+let searchedAlgo = "";
+
+function dbQueryType(e) {
+    searchedAlgo = e.target.value;
+}
+dbSearchBar.addEventListener("keyup", dbQueryType);
+
+async function dbQueryPress() {
+    const data = await getAlgoInfoFromDB(searchedAlgo);
+    dbH1Name.innerHTML = searchedAlgo;
+    dbH3Info.innerHTML = data;
+}
+dbSearchButton.addEventListener("click", dbQueryPress);
